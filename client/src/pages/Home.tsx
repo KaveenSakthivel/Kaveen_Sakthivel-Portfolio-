@@ -1,25 +1,33 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Services from "@/components/sections/Services";
+import Skills from "@/components/sections/Skills";
+import Experience from "@/components/sections/Experience";
+import WhyHireMe from "@/components/sections/WhyHireMe";
+import Projects from "@/components/sections/Projects";
+import Certifications from "@/components/sections/Certifications";
+import Testimonials from "@/components/sections/Testimonials";
+import Blog from "@/components/sections/Blog";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/Footer";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen bg-white dark:bg-slate-950">
+      <Navigation />
+      <Hero />
+      <About />
+      <Services />
+      <Skills />
+      <Experience />
+      <WhyHireMe />
+      <Projects />
+      <Certifications />
+      <Testimonials />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 }
