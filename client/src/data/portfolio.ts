@@ -8,8 +8,8 @@ export const personalInfo = {
   phone: "+91-8270814948",
   location: "Coimbatore, Tamil Nadu",
   bio: "Digital Marketing Specialist with hands-on experience in SEO, content marketing, keyword research, and social media marketing through multiple internships. Skilled in creating SEO-optimized content, improving organic visibility, conducting market research, and executing engagement-driven digital campaigns.",
-  profileImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663776238416/QPhX633oqLofvBervzqDBw/kaveen-profile_f1e264cf.jpg",
-  resumeUrl: "/manus-storage/kaveen-certificates_a2d6d846.pdf",
+  profileImage: "/manus-storage/Quliaty1img_3f7611a5.jpg",
+  resumeUrl: "/manus-storage/KaveenSakthivelDMResume_a2d6d846.pdf",
   linkedinUrl: "https://linkedin.com/in/kaveen-sakthivel",
   education: {
     degree: "Bachelor of Business Administration - Computer Applications (BBA CA)",
