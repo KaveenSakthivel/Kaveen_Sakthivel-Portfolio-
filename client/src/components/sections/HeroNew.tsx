@@ -9,9 +9,8 @@ const floatingBadges = [
 ];
 
 const stats = [
-  { value: '50+', label: 'Projects' },
+  { value: '10+', label: 'Projects' },
   { value: '100%', label: 'Satisfaction' },
-  { value: '3+', label: 'Years Exp' },
 ];
 
 export default function HeroNew() {

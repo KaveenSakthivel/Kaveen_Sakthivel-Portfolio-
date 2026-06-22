@@ -8,12 +8,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-white py-12 md:py-16">
+    <footer className="bg-card text-foreground py-12 md:py-16 border-t border-border">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="font-bold text-lg mb-4">Kaveen Sakthivel</h3>
-            <p className="text-white/70 text-sm">Digital Marketing Specialist helping brands grow through data-driven strategies.</p>
+            <h3 className="font-bold text-lg mb-4 text-primary">Kaveen Sakthivel</h3>
+            <p className="text-foreground/70 text-sm">Digital Marketing Specialist helping brands grow through data-driven strategies.</p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
@@ -22,7 +22,7 @@ export default function Footer() {
                 <li key={item}>
                   <button
                     onClick={() => scrollToElement(item.toLowerCase())}
-                    className="text-white/70 hover:text-white transition-colors"
+                    className="text-foreground/70 hover:text-foreground transition-colors"
                   >
                     {item}
                   </button>
@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               {['SEO Services', 'Content Marketing', 'Social Media', 'Paid Ads'].map((item) => (
                 <li key={item}>
-                  <a href="#services" className="text-white/70 hover:text-white transition-colors">
+                  <a href="#services" className="text-foreground/70 hover:text-foreground transition-colors">
                     {item}
                   </a>
                 </li>

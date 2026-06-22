@@ -22,7 +22,7 @@ export default function Experience() {
       <div className="container" ref={ref}>
         <motion.div initial="hidden" animate={isVisible ? 'visible' : 'hidden'} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Professional Experience</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins text-foreground">Professional Experience</h2>
             <p className="text-lg text-foreground/70">Building practical experience through internships and projects</p>
           </motion.div>
 

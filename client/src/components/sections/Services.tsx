@@ -28,7 +28,7 @@ export default function Services() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-white dark:bg-slate-950">
+    <section id="services" className="py-20 md:py-32 bg-background">
       <div className="container" ref={ref}>
         <motion.div
           initial="hidden"
@@ -37,10 +37,10 @@ export default function Services() {
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins text-foreground">
               Services I Offer
             </h2>
-            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            <p className="text-lg text-foreground max-w-2xl mx-auto">
               Comprehensive digital marketing solutions tailored to help your business grow and succeed in the digital landscape.
             </p>
           </motion.div>
