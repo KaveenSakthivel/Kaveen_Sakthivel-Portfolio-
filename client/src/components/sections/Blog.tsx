@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { blogPosts, blogCategories } from '@/data/portfolio';
+import { blogPosts } from '@/data/portfolio';
+
 import { Card } from '@/components/ui/card';
 import { Calendar, Clock } from 'lucide-react';
 
@@ -46,7 +47,7 @@ export default function Blog() {
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
-                      {post.readingTime} min read
+                      {post.readTime} min read
                     </div>
                   </div>
                 </Card>

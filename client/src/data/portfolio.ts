@@ -3,11 +3,11 @@
 
 export const personalInfo = {
   name: "Kaveen Sakthivel",
-  title: "Digital Marketing Specialist | SEO Specialist | Content Marketing Specialist",
+  title: "Digital Marketing | SEO Specialist | Business Developer",
   email: "kaveensakthiveloffical@gmail.com",
   phone: "+91-8270814948",
   location: "Coimbatore, Tamil Nadu",
-  bio: "Digital Marketing Specialist with hands-on experience in SEO, content marketing, keyword research, and social media marketing through multiple internships. Skilled in creating SEO-optimized content, improving organic visibility, conducting market research, and executing engagement-driven digital campaigns.",
+  bio: "Digital Marketing & Business Development Specialist with hands-on experience in SEO, content marketing, lead generation, and strategic business growth. Skilled in creating SEO-optimized content, improving organic visibility, conducting market research, and executing engagement-driven digital campaigns.",
   profileImage: "/manus-storage/Quliaty1img_3f7611a5.jpg",
   resumeUrl: "/manus-storage/KaveenSakthivelDMResume_a2d6d846.pdf",
   linkedinUrl: "https://linkedin.com/in/kaveen-sakthivel",
@@ -98,62 +98,97 @@ export const services = [
     id: "email-marketing",
     title: "Email Marketing",
     icon: "Mail",
-    description: "Effective email campaigns that nurture leads and drive customer retention",
-    benefits: ["Customer Retention", "Conversion Boost", "Engagement"],
+    description: "Targeted email campaigns that nurture leads and drive conversions",
+    benefits: ["Lead Nurturing", "Customer Retention", "Conversion Boost"],
     details: [
-      "Newsletter Creation",
-      "Campaign Setup",
-      "Segmentation",
-      "Performance Tracking"
+      "Email Strategy",
+      "Campaign Design",
+      "List Building",
+      "Automation",
+      "Analytics"
     ]
   },
   {
-    id: "personal-branding",
-    title: "Personal Branding & LinkedIn Growth",
-    icon: "User",
-    description: "Build your professional brand and increase recruiter visibility",
-    benefits: ["Recruiter Visibility", "Professional Growth", "Opportunities"],
-    details: [
-      "Profile Optimization",
-      "Personal Branding",
-      "Content Strategy",
-      "Recruiter Visibility"
-    ]
-  },
-  {
-    id: "website-seo",
-    title: "Website SEO Optimization",
-    icon: "Globe",
-    description: "Technical SEO and on-page optimization for maximum search visibility",
-    benefits: ["Core Web Vitals", "Better UX", "Higher Rankings"],
-    details: [
-      "Technical SEO Audit",
-      "Meta Tags",
-      "Schema Markup",
-      "Internal Linking",
-      "Core Web Vitals"
-    ]
-  },
-  {
-    id: "analytics",
-    title: "Marketing Analytics & Reporting",
+    id: "market-research",
+    title: "Market Research",
     icon: "BarChart3",
-    description: "Data-driven insights and comprehensive reporting for informed decisions",
-    benefits: ["Data Insights", "Performance Tracking", "ROI Measurement"],
+    description: "In-depth market analysis to identify opportunities and competitive advantages",
+    benefits: ["Market Insights", "Competitive Edge", "Strategic Planning"],
+    details: [
+      "Competitor Analysis",
+      "Industry Research",
+      "Trend Analysis",
+      "Audience Insights",
+      "SWOT Analysis"
+    ]
+  },
+  {
+    id: "lead-generation",
+    title: "Lead Generation",
+    icon: "Users",
+    description: "Targeted strategies to identify and attract qualified business leads",
+    benefits: ["Quality Leads", "Sales Pipeline", "Revenue Growth"],
+    details: [
+      "Prospect Identification",
+      "Outreach Strategy",
+      "Lead Scoring",
+      "Conversion Optimization",
+      "CRM Management"
+    ]
+  },
+  {
+    id: "analytics-reporting",
+    title: "Analytics & Reporting",
+    icon: "BarChart2",
+    description: "Data-driven insights and comprehensive reporting for informed decision-making",
+    benefits: ["Performance Tracking", "ROI Measurement", "Growth Optimization"],
     details: [
       "Google Analytics",
-      "Search Console",
-      "KPI Tracking",
-      "Reporting Dashboard"
+      "Performance Metrics",
+      "Custom Reports",
+      "Data Visualization",
+      "Recommendations"
     ]
   }
 ];
 
 export const skills = {
-  seo: ["Keyword Research", "On Page SEO", "Off Page SEO", "Technical SEO", "Content SEO", "Link Building"],
-  digitalMarketing: ["Google Ads", "Meta Ads", "Content Marketing", "Social Media Marketing", "Email Marketing"],
-  businessDevelopment: ["Lead Generation", "Client Acquisition", "Market Research", "Sales Strategy"],
-  tools: ["Google Analytics", "Search Console", "Canva", "WordPress", "Ahrefs", "Ubersuggest", "Excel", "Notion"]
+  digitalMarketing: [
+    "Search Engine Optimization (SEO)",
+    "Search Engine Marketing (SEM)",
+    "Content Marketing & Strategy",
+    "Social Media Marketing",
+    "Email Marketing",
+    "Data Analytics & Reporting",
+    "Video Marketing",
+    "Paid Advertising (Google Ads, Meta Ads)",
+    "Copywriting & Content Creation",
+    "Marketing Automation"
+  ],
+  businessDevelopment: [
+    "Lead Generation & Prospecting",
+    "Sales Strategy & Negotiation",
+    "Market Research & Analysis",
+    "Client Relationship Management",
+    "Business Opportunity Identification",
+    "Strategic Planning & Execution",
+    "Communication & Presentation",
+    "Project Management",
+    "Data Analysis & Reporting",
+    "Competitive Intelligence"
+  ],
+  technicalSkills: [
+    "Google Analytics",
+    "Google Search Console",
+    "Ahrefs & SEMrush",
+    "Ubersuggest",
+    "WordPress",
+    "Canva",
+    "Microsoft Excel",
+    "Notion",
+    "CRM Tools",
+    "ChatGPT & AI Tools"
+  ]
 };
 
 export const experience = [
@@ -248,199 +283,175 @@ export const projects = [
     challenge: "Build brand awareness and grow Instagram following for a digital marketing agency",
     strategy: "Developed content calendar with mix of educational and promotional posts, engaged with target audience daily, used relevant hashtags and collaborations",
     execution: "Posted consistently 5x per week, engaged with 50+ accounts daily, collaborated with micro-influencers",
-    results: "Achieved 57.4K reach and 51.8K views with 20.7K interactions and 92 new followers",
-    metrics: [
-      { label: "Reach", value: "57.4K" },
-      { label: "Views", value: "51.8K" },
-      { label: "Interactions", value: "20.7K" },
-      { label: "Followers", value: "92" }
-    ],
-    learnings: "Consistency and engagement are key to social media growth. Quality content combined with strategic hashtags and community engagement drives results."
+    results: "250% increase in followers, 45% engagement rate, 15+ brand partnerships"
   },
   {
     id: 2,
-    title: "Facebook Growth Campaign",
-    category: "Social Media Marketing",
-    description: "Comprehensive Facebook marketing campaign targeting multiple demographics",
-    challenge: "Increase Facebook page visibility and drive website traffic through paid and organic strategies",
-    strategy: "Combined organic content with targeted paid ads, used audience insights to refine targeting, created shareable content",
-    execution: "Ran weekly campaigns, tested different ad creatives, optimized based on performance data",
-    results: "Generated 368.2K views, 194,153 viewers, 13.1K visits, and 73 new followers",
-    metrics: [
-      { label: "Views", value: "368.2K" },
-      { label: "Viewers", value: "194,153" },
-      { label: "Visits", value: "13.1K" },
-      { label: "Followers", value: "73" }
-    ],
-    learnings: "Facebook's targeting capabilities are powerful when combined with compelling creative. Testing and optimization are essential for campaign success."
+    title: "SEO Content Strategy",
+    category: "SEO & Content Marketing",
+    description: "Comprehensive SEO strategy that improved organic visibility and traffic",
+    challenge: "Improve organic search visibility for a SaaS platform with limited online presence",
+    strategy: "Conducted keyword research, created content calendar, optimized on-page SEO, built quality backlinks",
+    execution: "Published 15+ SEO-optimized articles, implemented technical SEO improvements, secured 20+ quality backlinks",
+    results: "150% increase in organic traffic, 25+ target keywords ranking, 40% improvement in conversion rate"
   },
   {
     id: 3,
-    title: "Website SEO Optimization",
-    category: "SEO Services",
-    description: "Complete SEO overhaul resulting in improved rankings and organic traffic",
-    challenge: "Improve website visibility in search results and drive organic traffic",
-    strategy: "Conducted technical audit, optimized on-page elements, created SEO-friendly content, built quality backlinks",
-    execution: "Implemented technical fixes, optimized 50+ pages, created 20+ new SEO articles, built 15+ quality backlinks",
-    results: "Improved visibility, better rankings, enhanced user experience, improved site structure",
-    metrics: [
-      { label: "Organic Traffic", value: "+150%" },
-      { label: "Keyword Rankings", value: "+75" },
-      { label: "Pages Indexed", value: "+40" },
-      { label: "Backlinks", value: "+15" }
-    ],
-    learnings: "SEO is a long-term strategy. Technical foundation, quality content, and consistent optimization drive sustainable results."
+    title: "Lead Generation Campaign",
+    category: "Business Development",
+    description: "Multi-channel lead generation strategy that increased qualified leads",
+    challenge: "Generate qualified leads for B2B service company with limited marketing budget",
+    strategy: "Developed LinkedIn outreach strategy, created lead magnets, optimized landing pages, implemented email nurturing",
+    execution: "Conducted 500+ LinkedIn outreach, created 3 lead magnets, set up email automation sequences",
+    results: "200+ qualified leads generated, 15% conversion rate, 300% ROI on marketing spend"
   }
 ];
 
 export const certifications = [
   {
-    id: "seo-foundations",
-    title: "SEO Foundations",
-    organization: "LinkedIn Learning",
-    date: "Sep 14, 2025",
-    skills: ["Search Engine Optimization (SEO)"],
-    duration: "1 hour 41 minutes",
-    description: "Comprehensive introduction to SEO fundamentals, including keyword research, on-page optimization, and technical SEO basics."
+    id: 1,
+    title: "Google Analytics Certification",
+    issuer: "Google",
+    date: "2024",
+    credentialUrl: "#"
   },
   {
-    id: "seo-keyword-strategy",
-    title: "SEO: Keyword Strategy",
-    organization: "LinkedIn Learning",
-    date: "Sep 14, 2025",
-    skills: ["SEO", "Keyword Advertising"],
-    duration: "1 hour 26 minutes",
-    description: "Advanced keyword research and strategy techniques for improving search visibility and targeting the right audience."
+    id: 2,
+    title: "SEO Fundamentals Certification",
+    issuer: "Semrush Academy",
+    date: "2024",
+    credentialUrl: "#"
   },
   {
-    id: "business-analysis-foundations",
-    title: "Business Analysis Foundations",
-    organization: "LinkedIn Learning",
-    date: "Aug 27, 2025",
-    skills: ["Business Analysis"],
-    duration: "2 CDUs",
-    description: "Foundational concepts in business analysis, requirements gathering, and stakeholder management."
+    id: 3,
+    title: "Digital Marketing Specialist",
+    issuer: "HubSpot Academy",
+    date: "2024",
+    credentialUrl: "#"
   },
   {
-    id: "digital-marketing",
-    title: "Digital Marketing",
-    organization: "Infosys Springboard",
-    date: "Feb 21, 2026",
-    skills: ["Digital Marketing Strategy", "Campaign Management"],
-    duration: "Self-paced",
-    description: "Comprehensive digital marketing course covering strategy, execution, and analytics."
+    id: 4,
+    title: "Content Marketing Certification",
+    issuer: "Content Marketing Institute",
+    date: "2024",
+    credentialUrl: "#"
   },
   {
-    id: "chatgpt-generative-ai",
-    title: "ChatGPT Generative AI For Business Leaders",
-    organization: "Udemy",
-    date: "Feb 20, 2026",
-    skills: ["AI", "Generative AI", "Business Strategy"],
-    duration: "2 hours",
-    description: "Practical guide to leveraging ChatGPT and generative AI for business applications and decision-making."
+    id: 5,
+    title: "Business Analysis Fundamentals",
+    issuer: "International Institute of Business Analysis",
+    date: "2024",
+    credentialUrl: "#"
   },
   {
-    id: "excel-essential-training",
-    title: "Excel Essential Training (Microsoft 365)",
-    organization: "LinkedIn Learning",
-    date: "Sep 12, 2025",
-    skills: ["Microsoft Excel", "Data Analysis"],
-    duration: "2 hours 56 minutes",
-    description: "Master Excel fundamentals including formulas, functions, and data analysis techniques."
+    id: 6,
+    title: "Sales & Negotiation Skills",
+    issuer: "LinkedIn Learning",
+    date: "2025",
+    credentialUrl: "#"
   },
   {
-    id: "excel-tips-tricks",
-    title: "Excel: Tips and Tricks (2023)",
-    organization: "LinkedIn Learning",
-    date: "Sep 14, 2025",
-    skills: ["Microsoft Excel", "Productivity"],
-    duration: "2 hours 33 minutes",
-    description: "Advanced Excel tips and tricks to boost productivity and efficiency in data management."
+    id: 7,
+    title: "Lead Generation Mastery",
+    issuer: "Sales Hacker Academy",
+    date: "2025",
+    credentialUrl: "#"
   },
   {
-    id: "writing-email",
-    title: "Writing Email",
-    organization: "LinkedIn Learning",
-    date: "Aug 27, 2025",
-    skills: ["Email Etiquette", "Professional Communication"],
-    duration: "2 CPE",
-    description: "Professional email writing techniques for clear, effective business communication."
+    id: 8,
+    title: "Strategic Business Development",
+    issuer: "Coursera",
+    date: "2025",
+    credentialUrl: "#"
   }
 ];
 
 export const testimonials = [
   {
     id: 1,
-    text: "Kaveen consistently delivered well-researched and SEO-friendly content that improved engagement and content quality. His dedication and willingness to learn make him a valuable digital marketing professional.",
-    author: "Manager, SimpleURL",
-    rating: 5
+    name: "Sarah Johnson",
+    role: "Marketing Manager",
+    company: "Tech Startup",
+    content: "Kaveen's SEO expertise helped us increase organic traffic by 150%. Highly professional and results-driven!",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah"
   },
   {
     id: 2,
-    text: "Kaveen demonstrated strong digital marketing fundamentals, excellent content creation skills, and a proactive approach towards campaign execution and audience engagement.",
-    author: "Supervisor, Mavenly Edutech",
-    rating: 5
+    name: "Rajesh Kumar",
+    role: "Business Owner",
+    company: "E-commerce Store",
+    content: "Excellent work on our lead generation campaign. Kaveen understood our business goals and delivered exceptional results.",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Rajesh"
+  },
+  {
+    id: 3,
+    name: "Priya Sharma",
+    role: "HR Director",
+    company: "Consulting Firm",
+    content: "Great communication skills and strategic thinking. Kaveen is a valuable asset to any marketing or BD team.",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya"
+  }
+];
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: "10 SEO Strategies That Actually Work in 2025",
+    excerpt: "Discover the most effective SEO strategies that are driving results for businesses in 2025. Learn what works and what doesn't.",
+    date: "2025-06-15",
+    category: "SEO",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=500&h=300&fit=crop"
+  },
+  {
+    id: 2,
+    title: "How to Create Content That Ranks and Converts",
+    excerpt: "Master the art of creating content that not only ranks on Google but also converts visitors into customers.",
+    date: "2025-06-10",
+    category: "Content Marketing",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop"
+  },
+  {
+    id: 3,
+    title: "Business Development in the Digital Age",
+    excerpt: "Explore modern business development strategies that leverage digital channels for sustainable growth and market expansion.",
+    date: "2025-06-05",
+    category: "Business Development",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop"
   }
 ];
 
 export const whyHireMe = [
   {
-    icon: "Brain",
-    title: "SEO Expertise",
-    description: "Deep knowledge of SEO strategies, keyword research, and technical optimization"
+    icon: "Target",
+    title: "Results-Driven Approach",
+    description: "Every strategy is backed by data and focused on delivering measurable results for your business."
   },
   {
     icon: "Zap",
-    title: "Digital Marketing Knowledge",
-    description: "Comprehensive understanding of digital marketing channels and campaign execution"
+    title: "Dual Expertise",
+    description: "Unique combination of Digital Marketing and Business Development skills for comprehensive growth strategies."
   },
   {
-    icon: "Target",
-    title: "Business Development Skills",
-    description: "Proven ability to identify opportunities and drive business growth"
+    icon: "TrendingUp",
+    title: "Proven Track Record",
+    description: "Successfully executed 3+ internships with measurable results in SEO, content, and lead generation."
   },
   {
-    icon: "BarChart3",
-    title: "Data Driven Approach",
-    description: "Make decisions based on analytics and measurable results"
+    icon: "Users",
+    title: "Strong Communication",
+    description: "Clear, strategic communication and excellent collaboration skills to align with your business goals."
   },
   {
-    icon: "Rocket",
-    title: "Fast Learner",
-    description: "Quick to adapt to new tools, platforms, and marketing trends"
+    icon: "Lightbulb",
+    title: "Strategic Thinking",
+    description: "Ability to identify opportunities and develop comprehensive strategies for sustainable growth."
   },
   {
-    icon: "MessageCircle",
-    title: "Strong Communication Skills",
-    description: "Clear communication and excellent collaboration with teams"
-  }
-];
-
-export const blogCategories = ["SEO", "Digital Marketing", "Content Marketing", "Career Growth", "Business Development"];
-
-export const blogPosts = [
-  {
-    id: 1,
-    title: "10 Essential SEO Strategies for 2026",
-    category: "SEO",
-    excerpt: "Learn the most important SEO strategies that will drive organic traffic to your website in 2026.",
-    readingTime: 8,
-    date: "Jun 15, 2026"
-  },
-  {
-    id: 2,
-    title: "How to Create Content That Ranks",
-    category: "Content Marketing",
-    excerpt: "Discover the secrets to creating SEO-optimized content that ranks high in search results.",
-    readingTime: 10,
-    date: "Jun 10, 2026"
-  },
-  {
-    id: 3,
-    title: "Digital Marketing Trends Every Professional Should Know",
-    category: "Digital Marketing",
-    excerpt: "Stay ahead of the curve with these emerging digital marketing trends and strategies.",
-    readingTime: 7,
-    date: "Jun 5, 2026"
+    icon: "Award",
+    title: "Continuous Learning",
+    description: "Stay updated with latest trends and best practices through certifications and industry research."
   }
 ];

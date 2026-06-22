@@ -34,24 +34,24 @@ export default function Hero() {
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 dark:from-slate-900 dark:via-blue-900 dark:to-slate-800"
           style={{
-            backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663776238416/QPhX633oqLofvBervzqDBw/hero-background-f33RbnBt5usfAv5ARZnX2E.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundImage: `radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                            radial-gradient(circle at 80% 80%, rgba(30, 144, 255, 0.1) 0%, transparent 50%),
+                            repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(59, 130, 246, 0.05) 35px, rgba(59, 130, 246, 0.05) 70px)`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white dark:from-slate-950/0 dark:via-slate-950/50 dark:to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/30 dark:to-slate-950/30" />
       </div>
 
       {/* Floating Elements */}
       <motion.div
-        className="absolute top-20 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"
+        className="absolute top-20 right-10 w-32 h-32 bg-blue-500/15 rounded-full blur-3xl"
         animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
         transition={{ duration: 8, repeat: Infinity }}
       />
       <motion.div
-        className="absolute bottom-20 left-10 w-40 h-40 bg-cyan-400/10 rounded-full blur-3xl"
+        className="absolute bottom-20 left-10 w-40 h-40 bg-blue-400/15 rounded-full blur-3xl"
         animate={{ scale: [1.2, 1, 1.2], opacity: [0.8, 0.5, 0.8] }}
         transition={{ duration: 10, repeat: Infinity, delay: 2 }}
       />
@@ -67,7 +67,7 @@ export default function Hero() {
         <motion.div variants={itemVariants} className="mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">Open To Opportunities</span>
+            <span className="text-sm font-medium text-primary">Digital Marketing | SEO Specialist | Business Developer</span>
           </div>
         </motion.div>
 
@@ -86,7 +86,15 @@ export default function Hero() {
           variants={itemVariants}
           className="text-lg md:text-xl text-foreground/70 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
-          Digital Marketing Specialist helping brands grow through SEO, Content Marketing, Social Media Marketing, Google Ads, Meta Ads, and Data-Driven Marketing Strategies.
+          Digital Marketing Specialist & Business Developer helping brands grow through SEO, Content Marketing, Lead Generation, and Data-Driven Strategies.
+        </motion.p>
+
+        {/* BD Role Line */}
+        <motion.p
+          variants={itemVariants}
+          className="text-base text-foreground/60 mb-10 max-w-2xl mx-auto"
+        >
+          Specializing in strategic business development to identify growth opportunities and drive sustainable revenue expansion.
         </motion.p>
 
         {/* Value Proposition */}
@@ -117,14 +125,7 @@ export default function Hero() {
             <Download className="w-5 h-5 mr-2" />
             Download Resume
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-foreground/20 hover:border-primary hover:text-primary px-8"
-          >
-            <ExternalLink className="w-5 h-5 mr-2" />
-            LinkedIn Profile
-          </Button>
+
         </motion.div>
 
         {/* Scroll Indicator */}
