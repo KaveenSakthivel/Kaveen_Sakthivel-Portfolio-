@@ -12,12 +12,15 @@ import Blog from "@/components/sections/Blog";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/Footer";
 
+import MyJourney from "@/components/sections/MyJourney";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950">
       <Navigation />
       <Hero />
       <About />
+      <MyJourney />
       <Services />
       <Skills />
       <Experience />

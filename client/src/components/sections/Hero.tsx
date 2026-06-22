@@ -107,7 +107,7 @@ export default function Hero() {
             className="bg-primary hover:bg-primary/90 text-white px-8"
             onClick={() => scrollToElement('contact')}
           >
-            Get In Touch
+            Let's Connect
           </Button>
           <Button
             size="lg"
