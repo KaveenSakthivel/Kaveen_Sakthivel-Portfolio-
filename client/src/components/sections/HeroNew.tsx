@@ -4,9 +4,11 @@ import { ArrowRight, Zap } from 'lucide-react';
 
 export default function HeroNew() {
   const stats = [
-    { value: '10+', label: 'Projects' },
-    { value: '100%', label: 'Satisfaction' }
-  ];
+  { value: '3+', label: 'Internships' },
+  { value: '30+', label: 'SEO Articles' },
+  { value: '3+', label: 'Projects' },
+  { value: '90%+', label: 'Growth Impact' }
+];
 
   const handleConnect = () => {
     const contactSection = document.querySelector('#contact');
@@ -58,11 +60,11 @@ export default function HeroNew() {
               transition={{ delay: 0.3 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-space-grotesk leading-tight"
             >
-              <span className="text-foreground">Transforming</span>
+              <span className="text-foreground">Helping Brands Grow Through</span>
               <br />
-              <span className="gradient-text">Ideas Into</span>
+              <span className="gradient-text">SEO & Digital Marketing</span>
               <br />
-              <span className="text-foreground">Digital Growth</span>
+              <span className="text-foreground">Business Development</span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -86,7 +88,7 @@ export default function HeroNew() {
                 onClick={handleConnect}
                 className="btn-glass-primary flex items-center gap-2"
               >
-                Let's Connect <ArrowRight className="w-4 h-4" />
+                Hire Me <ArrowRight className="w-4 h-4" />
               </button>
               <button
                 onClick={handleDownloadResume}
