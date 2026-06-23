@@ -23,7 +23,7 @@ export default function WhyHireMe() {
         <motion.div initial="hidden" animate={isVisible ? 'visible' : 'hidden'} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Why Hire Me?</h2>
-            <p className="text-lg text-foreground/70">What makes me the right choice for your digital marketing needs</p>
+            <p className="text-lg text-foreground">What makes me the right choice for your digital marketing needs</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -36,7 +36,7 @@ export default function WhyHireMe() {
                       <IconComponent className="w-6 h-6 text-primary" />
                     </div>
                     <h3 className="text-lg font-semibold mb-2 font-poppins">{reason.title}</h3>
-                    <p className="text-foreground/70">{reason.description}</p>
+                    <p className="text-foreground">{reason.description}</p>
                   </Card>
                 </motion.div>
               );

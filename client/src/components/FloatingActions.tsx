@@ -28,7 +28,7 @@ export default function FloatingActions() {
     <>
       {/* Let's Talk Button */}
       <motion.button
-        className="fixed bottom-8 left-8 glass-strong px-6 py-3 rounded-full font-medium flex items-center gap-2 group z-40"
+        className="fixed bottom-8 left-8 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 group z-40 transition-colors"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={scrollToContact}
@@ -36,13 +36,13 @@ export default function FloatingActions() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <MessageCircle size={18} />
-        <span className="hidden sm:inline">Let's Talk</span>
+        <MessageCircle size={18} className="text-white" />
+        <span className="hidden sm:inline text-white">Let's Talk</span>
       </motion.button>
 
       {/* Back to Top Button */}
       <motion.button
-        className="fixed bottom-8 right-8 glass-strong p-3 rounded-full ring-brand group z-40"
+        className="fixed bottom-8 right-8 glass-strong p-3 rounded-full ring-brand group z-40 text-foreground"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={scrollToTop}

@@ -23,7 +23,7 @@ export default function Experience() {
         <motion.div initial="hidden" animate={isVisible ? 'visible' : 'hidden'} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins text-foreground">Professional Experience</h2>
-            <p className="text-lg text-foreground/70">Building practical experience through internships and projects</p>
+            <p className="text-lg text-foreground">Building practical experience through internships and projects</p>
           </motion.div>
 
           <div className="space-y-8">
@@ -39,14 +39,14 @@ export default function Experience() {
                         <h3 className="text-xl font-semibold font-poppins">{exp.title}</h3>
                         <span className="text-sm text-primary font-medium">{exp.startDate} – {exp.endDate}</span>
                       </div>
-                      <p className="text-foreground/70 mb-1">{exp.company}</p>
+                      <p className="text-foreground mb-1">{exp.company}</p>
                       <p className="text-sm text-foreground/50 mb-4">{exp.location}</p>
-                      <p className="text-foreground/70 mb-4">{exp.description}</p>
+                      <p className="text-foreground mb-4">{exp.description}</p>
                       <div className="grid md:grid-cols-2 gap-2">
                         {(exp.responsibilities || exp.achievements)?.map((item, i) => (
                           <div key={i} className="flex items-start gap-2">
                             <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                            <span className="text-sm text-foreground/70">{item}</span>
+                            <span className="text-sm text-foreground">{item}</span>
                           </div>
                         ))}
                       </div>

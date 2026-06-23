@@ -60,7 +60,7 @@ export default function Services() {
                       <IconComponent className="w-6 h-6 text-primary" />
                     </div>
                     <h3 className="text-xl font-semibold mb-2 font-poppins">{service.title}</h3>
-                    <p className="text-foreground/70 text-sm mb-4">{service.description}</p>
+                    <p className="text-foreground text-sm mb-4">{service.description}</p>
                     <div className="space-y-2">
                       <p className="text-xs font-semibold text-primary uppercase tracking-wide">Key Services</p>
                       <ul className="text-xs text-foreground/60 space-y-1">

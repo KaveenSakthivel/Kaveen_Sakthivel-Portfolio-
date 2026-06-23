@@ -24,7 +24,7 @@ export default function Blog() {
         <motion.div initial="hidden" animate={isVisible ? 'visible' : 'hidden'} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Latest Blog Posts</h2>
-            <p className="text-lg text-foreground/70">Insights on digital marketing, SEO, and business growth</p>
+            <p className="text-lg text-foreground">Insights on digital marketing, SEO, and business growth</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -39,7 +39,7 @@ export default function Blog() {
                   <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors font-poppins">
                     {post.title}
                   </h3>
-                  <p className="text-foreground/70 text-sm mb-4">{post.excerpt}</p>
+                  <p className="text-foreground text-sm mb-4">{post.excerpt}</p>
                   <div className="flex items-center gap-4 text-xs text-foreground/60">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />

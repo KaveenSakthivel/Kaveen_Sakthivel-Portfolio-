@@ -84,7 +84,7 @@ export default function Hero() {
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-xl text-foreground/70 mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
         >
           Digital Marketing Specialist & Business Developer helping brands grow through SEO, Content Marketing, Lead Generation, and Data-Driven Strategies.
         </motion.p>

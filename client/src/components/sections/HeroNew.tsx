@@ -1,23 +1,39 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
 import { personalInfo } from '@/data/portfolio';
-
-const floatingBadges = [
-  { label: 'SEO Expert', delay: 0 },
-  { label: 'Growth Hacker', delay: 0.2 },
-  { label: 'BD Specialist', delay: 0.4 },
-];
-
-const stats = [
-  { value: '10+', label: 'Projects' },
-  { value: '100%', label: 'Satisfaction' },
-];
+import { ArrowRight, Zap } from 'lucide-react';
 
 export default function HeroNew() {
+  const stats = [
+    { value: '10+', label: 'Projects' },
+    { value: '100%', label: 'Satisfaction' }
+  ];
+
+  const handleConnect = () => {
+    const contactSection = document.querySelector('#contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleDownloadResume = () => {
+    window.open(personalInfo.resumeUrl, '_blank');
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
+      {/* Animated Background Elements */}
+      <motion.div
+        className="absolute inset-0 -z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
+      </motion.div>
+
+      <div className="container relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -26,143 +42,130 @@ export default function HeroNew() {
           >
             {/* Badge */}
             <motion.div
-              className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-6"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6"
             >
-              <Sparkles size={16} className="text-primary" />
-              <span className="text-sm font-medium">Digital Marketing & Business Development</span>
+              <Zap className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-foreground">{personalInfo.title}</span>
             </motion.div>
 
             {/* Heading */}
             <motion.h1
-              className="text-5xl md:text-7xl font-bold font-space-grotesk mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
+              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-space-grotesk leading-tight"
             >
-              Transforming <span className="gradient-text">Ideas Into</span> Digital Growth
+              <span className="text-foreground">Transforming</span>
+              <br />
+              <span className="gradient-text">Ideas Into</span>
+              <br />
+              <span className="text-foreground">Digital Growth</span>
             </motion.h1>
 
-            {/* Description */}
+            {/* Subtitle */}
             <motion.p
-              className="text-lg text-foreground/80 mb-8 leading-relaxed max-w-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
+              className="text-lg text-foreground/80 mb-8 max-w-xl"
             >
-              Digital Marketing Specialist & Business Developer helping brands grow through SEO, Content Marketing, Lead Generation, and Data-Driven Strategies.
+              {personalInfo.bio}
             </motion.p>
 
             {/* CTA Buttons */}
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
+              className="flex flex-wrap gap-4"
             >
-              <button className="btn-glass-primary flex items-center justify-center gap-2 group">
-                Let's Connect
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <button
+                onClick={handleConnect}
+                className="btn-glass-primary flex items-center gap-2"
+              >
+                Let's Connect <ArrowRight className="w-4 h-4" />
               </button>
-              <button className="btn-glass flex items-center justify-center gap-2">
-                Download Resume
+              <button
+                onClick={handleDownloadResume}
+                className="btn-glass flex items-center gap-2"
+              >
+                Download Resume <ArrowRight className="w-4 h-4" />
               </button>
             </motion.div>
 
             {/* Stats */}
             <motion.div
-              className="flex gap-8"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
+              className="flex gap-8 mt-12 pt-8 border-t border-border"
             >
               {stats.map((stat, index) => (
-                <div key={index}>
-                  <div className="stat-counter">{stat.value}</div>
-                  <p className="text-sm text-foreground/60">{stat.label}</p>
+                <div key={index} className="flex flex-col">
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.7 + index * 0.1 }}
+                    className="text-3xl md:text-4xl font-bold gradient-text"
+                  >
+                    {stat.value}
+                  </motion.span>
+                  <span className="text-sm text-foreground mt-1">{stat.label}</span>
                 </div>
               ))}
             </motion.div>
           </motion.div>
 
-          {/* Right - Portrait with Floating Badges */}
+          {/* Right - Profile Image */}
           <motion.div
-            className="relative flex items-center justify-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative"
           >
-            {/* Glow Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-cyan-400/20 rounded-3xl blur-3xl" />
-
-            {/* Glass Frame */}
-            <motion.div
-              className="relative glass-strong p-1 rounded-3xl w-full max-w-sm"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                src={personalInfo.profileImage}
-                alt={personalInfo.name}
-                className="w-full rounded-3xl object-cover"
-              />
-            </motion.div>
-
-            {/* Floating Badges */}
-            {floatingBadges.map((badge, index) => (
+            <div className="relative w-full aspect-square max-w-md mx-auto">
+              {/* Glow Background */}
               <motion.div
-                key={index}
-                className="absolute glass px-4 py-2 rounded-full text-sm font-medium"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: [0, -10, 0] }}
-                transition={{
-                  delay: 0.7 + badge.delay,
-                  duration: 3 + index,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
-                style={{
-                  top: `${20 + index * 30}%`,
-                  right: index % 2 === 0 ? '-20px' : 'auto',
-                  left: index % 2 === 0 ? 'auto' : '-20px',
-                }}
-              >
-                <span className="text-primary mr-2">•</span>
-                {badge.label}
-              </motion.div>
-            ))}
+                className="absolute inset-0 bg-gradient-to-br from-primary/30 to-cyan-500/20 rounded-3xl blur-2xl"
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 4, repeat: Infinity }}
+              />
 
-            {/* Decorative Elements */}
-            <motion.div
-              className="absolute top-10 right-10 w-20 h-20 border border-primary/30 rounded-full"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-            />
-            <motion.div
-              className="absolute bottom-10 left-10 w-32 h-32 border border-cyan-400/20 rounded-full"
-              animate={{ rotate: -360 }}
-              transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-            />
+              {/* Image Container */}
+              <motion.div
+                className="relative w-full h-full rounded-3xl overflow-hidden glass-strong border-2 border-primary/30"
+                whileHover={{ scale: 1.02 }}
+              >
+                <img
+                  src={personalInfo.profileImage}
+                  alt="Kaveen Sakthivel"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+
+              {/* Floating Badges */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="absolute -top-4 -right-4 px-4 py-2 glass rounded-lg text-sm font-semibold text-primary"
+              >
+                Expert
+              </motion.div>
+
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
+                className="absolute -bottom-4 -left-4 px-4 py-2 glass rounded-lg text-sm font-semibold text-cyan-400"
+              >
+                Growth
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-          <motion.div
-            className="w-1 h-2 bg-primary rounded-full"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }

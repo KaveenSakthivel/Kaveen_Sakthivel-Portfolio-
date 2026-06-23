@@ -8,9 +8,9 @@ export const personalInfo = {
   phone: "+91-8270814948",
   location: "Coimbatore, Tamil Nadu",
   bio: "Digital Marketing & Business Development Specialist with hands-on experience in SEO, content marketing, lead generation, and strategic business growth. Skilled in creating SEO-optimized content, improving organic visibility, conducting market research, and executing engagement-driven digital campaigns.",
-  profileImage: "/manus-storage/Quliaty1img_3f7611a5.jpg",
-  resumeUrl: "/manus-storage/KaveenSakthivelDMResume_a2d6d846.pdf",
-  linkedinUrl: "https://linkedin.com/in/kaveen-sakthivel",
+  profileImage: "/manus-storage/1000077560-Picsart-AiImageEnhancer.jpg_bd0473c7.webp",
+  resumeUrl: "https://drive.google.com/file/d/1s0PeDt-KQjoagDhNhJ-FTek7nMetl243/view?usp=sharing",
+  linkedinUrl: "https://www.linkedin.com/in/kaveen-sakthivel",
   education: {
     degree: "Bachelor of Business Administration - Computer Applications (BBA CA)",
     school: "Dr. NGP Arts and Science College, Coimbatore",
@@ -313,56 +313,91 @@ export const certifications = [
     title: "Google Analytics Certification",
     issuer: "Google",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/1h15nxA0wMmXFAUuum-YhmDNOuXeXbslL/view?usp=sharing"
   },
   {
     id: 2,
     title: "SEO Fundamentals Certification",
     issuer: "Semrush Academy",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/1Cw7OXkYbD_vMjPZe0AsyF8Ik0EfMMVUH/view?usp=sharing"
   },
   {
     id: 3,
     title: "Digital Marketing Specialist",
     issuer: "HubSpot Academy",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/15vovuxjWtf-C54IfyhGdMHneb6G8gBkn/view?usp=sharing"
   },
   {
     id: 4,
     title: "Content Marketing Certification",
     issuer: "Content Marketing Institute",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/1E7nQQoRudQKB37JXwt10Eaw0QWBnZaeG/view?usp=sharing"
   },
   {
     id: 5,
     title: "Business Analysis Fundamentals",
     issuer: "International Institute of Business Analysis",
     date: "2024",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/1YgcvQ-GTF4TTsFPHedIKCRUQaz_pZMFN/view?usp=sharing"
   },
   {
     id: 6,
     title: "Sales & Negotiation Skills",
     issuer: "LinkedIn Learning",
     date: "2025",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/16QNNPPhzwtf8nhSrWGAzZt1TLCAfBMN-/view?usp=sharing"
   },
   {
     id: 7,
     title: "Lead Generation Mastery",
     issuer: "Sales Hacker Academy",
     date: "2025",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/1uLqNQp4zyDCav4o7fj70ldenJkGv4e5g/view?usp=sharing"
   },
   {
     id: 8,
     title: "Strategic Business Development",
     issuer: "Coursera",
     date: "2025",
-    credentialUrl: "#"
+    credentialUrl: "https://drive.google.com/file/d/1JJBXHLB8LPJB6nZkNpTdLMNGvVSA48fV/view?usp=sharing"
+  },
+  {
+    id: 9,
+    title: "Advanced Digital Marketing",
+    issuer: "Digital Marketing Institute",
+    date: "2025",
+    credentialUrl: "https://drive.google.com/file/d/1c00JhuP-b2XjHZa08Mln5hnlaUocPxG0/view?usp=sharing"
+  },
+  {
+    id: 10,
+    title: "Business Growth Strategies",
+    issuer: "Growth Academy",
+    date: "2025",
+    credentialUrl: "https://drive.google.com/file/d/1ft95sV1UTRkXQ2I7eKKn4stWClBmzP94/view?usp=sharing"
+  },
+  {
+    id: 11,
+    title: "Market Research & Analysis",
+    issuer: "Market Research Institute",
+    date: "2025",
+    credentialUrl: "https://drive.google.com/file/d/15fF3pTBXLH2Djy3-pF-luDjyJ5JBz0UO/view?usp=sharing"
+  },
+  {
+    id: 12,
+    title: "Professional Development",
+    issuer: "Professional Institute",
+    date: "2025",
+    credentialUrl: "https://drive.google.com/file/d/1FzHUuRoMKkZjfdi91fVHZfEDF1h6E2TH/view?usp=sharing"
+  },
+  {
+    id: 13,
+    title: "Executive Leadership",
+    issuer: "Leadership Academy",
+    date: "2025",
+    credentialUrl: "https://drive.google.com/file/d/1m_pwImFIDc9h9hEi6NeVSiHVf1Y8R1nj/view?usp=sharing"
   }
 ];
 

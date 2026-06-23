@@ -35,7 +35,7 @@ export default function Contact() {
         <motion.div initial="hidden" animate={isVisible ? 'visible' : 'hidden'} variants={containerVariants}>
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-poppins">Let's Connect</h2>
-            <p className="text-lg text-foreground/70">Ready to discuss your project or collaboration opportunities?</p>
+            <p className="text-lg text-foreground">Ready to discuss your project or collaboration opportunities?</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -61,7 +61,7 @@ export default function Contact() {
               <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
                 <MapPin className="w-8 h-8 text-primary mx-auto mb-3" />
                 <h3 className="font-semibold mb-2">Location</h3>
-                <p className="text-foreground/70 text-sm">{personalInfo.location}</p>
+                <p className="text-foreground text-sm">{personalInfo.location}</p>
               </Card>
             </motion.div>
           </div>
@@ -134,7 +134,7 @@ export default function Contact() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mt-12 text-center">
-            <p className="text-foreground/70 mb-6">Or connect with me on social media</p>
+            <p className="text-foreground mb-6">Or connect with me on social media</p>
             <div className="flex justify-center gap-4">
               <Button variant="outline" size="lg" className="rounded-full">
                 <Linkedin className="w-5 h-5" />
